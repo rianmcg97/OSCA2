@@ -7,5 +7,6 @@ run-task-3:
 run-task-4:
 	{ head -n 1 dkit.html; tail -n 1 dkit.html; } | tr '<>' '[]' | sort -r >Mangled.txt
 run-task-5:
-	egrep -xo '^#.[0-9a-f]{5}' colours.txt && egrep -xo '^#.[0-9a-f]{7}' colours.txt
-
+	egrep -xo '^#.[0-9a-f]{5,7}' colours.txt
+run-task-6:
+	egrep -xo '^#.[0-9a-f]{5,7}' colours.txt | cut -c 4,5

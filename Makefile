@@ -9,4 +9,4 @@ run-task-4:
 run-task-5:
 	egrep -xo '^#.[0-9a-f]{5,7}' colours.txt
 run-task-6:
-	egrep -xo '^#.[0-9a-f]{5,7}' colours.txt | cut -c 4,5
+	egrep -xo '^#.[0-9a-f]{5,7}' colours.txt | cut -c 4,5 | ./Hex

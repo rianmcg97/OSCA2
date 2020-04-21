@@ -14,4 +14,6 @@ run-task-8:
 	tail access.log
 run-task-9:
 	grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" access.log | uniq
+run-task-10:
+	grep -o -E ".* [4]{1}[0]{1}[4]{1} .*" access.log
 

@@ -18,4 +18,6 @@ run-task-9:
 	grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" access.log | uniq
 run-task-10:
 	grep -o -E ".* [4]{1}[0]{1}[4]{1} .*" access.log | grep -o -P "GET(.*)HTTP/1.1"
-
+run-task-11:
+	grep -E -o ".* Edg/([0-9]{1,3}[\.]){3}[0-9]{1,3}" access.log >access.ie.log
+	

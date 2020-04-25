@@ -11,7 +11,7 @@ run-task-5:
 run-task-6:
 	egrep -xo '^#.[0-9a-f]{5,7}' colours.txt | cut -c 4,5 | ./Hex
 run-task-7:
-	egrep -xo '^#.[0-9a-f]{5,7}' colours.txt
+	egrep -xo '^#.[0-9a-f]{5,7}' colours.txt | tr -d '#' | ./Hex
 run-task-8:
 	tail access.log
 run-task-9:
@@ -20,4 +20,5 @@ run-task-10:
 	grep -o -E ".* [4]{1}[0]{1}[4]{1} .*" access.log | grep -o -P "GET(.*)HTTP/1.1"
 run-task-11:
 	grep -E -o ".* MSIE .*" access.log >access.ie.log
-	
+run-task-12:
+	grep -E -o ".* [0-9]{0,1}[0-9]{0,1}[0,9]{0,1} (5|6|7|8|9|1[0-9]) .*" access.log >access5mil.log

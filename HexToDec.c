@@ -10,7 +10,7 @@ int main()
   while(fgets(hex, sizeof hex, stdin) != NULL)
   {
   decVal = strtol(hex, &remaining, 16);
-  printf("%ld,", decVal);
+  printf("%.2ld \n", decVal, decVal+2);
   }
   return 0;
 }

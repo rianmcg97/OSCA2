@@ -21,3 +21,8 @@ https://www.geeksforgeeks.org/sort-command-linuxunix-examples/
 
 https://www.linode.com/docs/tools-reference/tools/manipulate-lists-with-sort-and-uniq/
 
+GitHub
+https://github.com/rianmcg97/OSCA2
+
+Screencast
+https://web.microsoftstream.com/video/e5596431-eede-48dd-9114-aa139d5e71be

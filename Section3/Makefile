@@ -1,3 +1,19 @@
+CC      = gcc
+FLAGS   = -Wall -Wextra -Wpedantic
+OBJECTS = build/Report.o
+
+link: ${OBJECTS}
+	 ${CC} $^ -o build/Report
+
+build/Report.o: Report.c
+	${CC} -c ${FLAGS} $< -o $@
+
+clean:
+	rm -rf ./build && mkdir -p build/lib
+
+run:
+	./build/Report
+
 run-task-1:
 	tail access.log
 run-task-2:

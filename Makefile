@@ -11,7 +11,7 @@ run-task-5:
 run-task-6:
 	egrep -xo '^#.[0-9a-f]{5,7}' colours.txt | cut -c 4,5 | ./Hex
 run-task-7:
-	egrep -xo '^#.[0-9a-f]{5,7}' colours.txt | tr -d '#' | ./Hex
+	egrep -xo '^#.[0-9a-f]{5,7}' colours.txt | ./HexToRGB
 run-task-8:
 	tail access.log
 run-task-9:

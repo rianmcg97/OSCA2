@@ -14,10 +14,12 @@ int main()
   int r, g, b;
   if( 3 == scanf( "#%02x%02x%02x", &r, &g, &b ) )
    {
-   	 printf("%ld \n", decVal);
-     printf( "Red   : %3d (%02x)\n", r, r );
-     printf( "Green : %3d (%02x)\n", g, g );
-     printf( "Blue  : %3d (%02x)\n", b, b );
+   	 //printf("%ld \n", decVal);
+     //printf( "Red   : %3d (%02x)\n", r, r );
+     //printf( "Green : %3d (%02x)\n", g, g );
+     //printf( "Blue  : %3d (%02x)\n", b, b );
+
+     printf("%02x%02x%02x (%02x,%02x,%02x)\n", r, g, b, r, g, b);
    }
  }
  return 0;
